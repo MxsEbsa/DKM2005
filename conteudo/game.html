@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<!--<link rel="stylesheet" href="css/style.css">-->
+	<title>Números Dourados</title>
+</head>
+<body style="display:none">
+	
+<!-- HTML DO OED AQUI -->
+<div class="OED">
+	<div id="capa">
+		<div>
+			<p>
+				Para jogar, você precisa representar o número usando peças do Material Dourado. 
+				<br><br>
+				Clique em qualquer peça da lateral a fim de arrastá-la para o quadro no meio da tela.
+				<br><br>
+				Você também pode clicar em peças que colocou no quadro e arrastá-las de volta para a lateral. 
+				<br><br>
+				Use o <strong>menor</strong> número de peças possível para representar o número.
+				<br><br>
+				Quando terminar, clique em Confirmar.
+				<br><br>
+				Para iniciar, clique em Jogar.
+			</p>
+		</div>
+		<button></button>	
+	</div>
+	<div id="tela1">
+		<div id="numero">135</div>
+		<div id="esquerda">
+			<div class="draggable" id="p1"><img src="img/p1.png"></div>
+			<div class="draggable" id="p2"><img src="img/p2.png"></div>
+			<div class="draggable" id="p3"><img src="img/p3.png"></div>
+		</div>
+		<div id="direita"></div>
+		<button></button>
+	</div>	
+	<div id="erro1"><img src="img/erro1.png" usemap="#Map1"></div>
+	<div id="erro2"><img src="img/erro2.png" usemap="#Map2"></div>	
+	<div id="erro3"><img src="img/erro3.png" usemap="#Map3"></div>
+	<div id="certo1"><img src="img/certo1.png" usemap="#Map4"></div>
+	<div id="certo2"><img src="img/certo2.png" usemap="#Map5"></div>
+	<div id="certo3"><img src="img/certo3.png" usemap="#Map6"></div>
+	<map name="Map2" id="Map2">
+    	<area alt="Fechar" title="" href="#" shape="poly" coords="668,209,668,248,706,248,706,209" />
+    	[...]
+	</map>
+	<map name="Map1" id="Map1">
+    	<area alt="Fechar" title="" href="#" shape="poly" coords="709,152,709,190,749,190,749,152" />
+    	[...]
+	</map>
+	<map name="Map3" id="Map3">
+    	<area alt="Jogar Outra Vez" title="" href="#" shape="poly" coords="14,500,14,545,295,545,295,500" />
+    	[...]
+	</map>
+	<map name="Map4" id="Map4">
+    	<area alt="Próxima Fase" title="" href="#" shape="poly" coords="15,533,15,574,280,574,280,533" />
+    	[...]
+	</map>
+	<map name="Map5" id="Map5">
+    	<area alt="Próxima Fase" title="" href="#" shape="poly" coords="15,533,15,574,280,574,280,533" />
+    	[...]
+	</map>
+	<!-- <map name="Map6" id="Map6">
+    	<area alt="Finalizar" title="" href="#" shape="poly" coords="21,547,21,592,250,592,250,547" />
+    	[...]
+	</map> -->
+</div>
+<!-- HTML DO OED AQUI -->
+
+
+	<!-- CARREGAMENTO DE SCRIPTS -->
+	<script>
+		function iniciar_oed_frame(){
+			iniciar_com_tap();
+		}	
+	</script>	
+	<script type="text/javascript" src="../js/carrega_oed.js"></script>
+	<script type="text/javascript" src="js/funcoes.js"></script>	
+</body>	
+</html>

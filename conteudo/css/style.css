@@ -1,0 +1,21 @@
+/* SEU CSS AQUI */
+#capa{position:absolute; width: 1024px; height: 660px; background-image: url("../img/fundo1.jpg");}
+#capa div{position: absolute; left: 360px; top: 50px; width:590px; text-align: center; font-size: 26px;  font-family: "Arial";  color: rgb(67, 61, 49);  line-height: 1.182;}
+#capa button{width: 165px; height: 50px; position: absolute; bottom: 45px; left: 577px; opacity: 0; border: none}
+
+#tela1{position:absolute; top:0; width: 1024px; height: 660px; background-image: url("../img/fundo2.jpg"); display:none;}
+#tela1 #numero{position: absolute; top: 7px; left: 50px; width: 240px; height: 76px; text-align: center;  font-family: "Arial"; font-weight: bold; font-size: 50px;}
+#tela1 #esquerda{position: absolute;width: 250px; top: 150px; left: 10px; height: 500px; z-index: 50;}
+#tela1 #esquerda div{position: absolute; cursor:pointer;}
+#tela1 #esquerda #p1{top: 180px; left: 150px;}
+#tela1 #esquerda #p2{top:0; left: 50px;}
+#tela1 #esquerda #p3{top:240px; left: 0;}
+#tela1 #direita{ position: absolute; width: 700px; top: 50px; right: 10px; height: 540px;}
+#tela1 #direita div{cursor:pointer;}
+#tela1 button{width: 240px; height: 50px; position: absolute; bottom: 20px; left: 577px; opacity: 0; border: none}
+
+#erro1, #erro2, #erro3, #certo1, #certo2, #certo3{position:absolute; top:0; width: 1024px; height: 660px; display: none; z-index: 51;}
+
+area:focus, map:focus{
+	outline: none; border: none;
+}
